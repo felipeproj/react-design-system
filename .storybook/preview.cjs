@@ -1,5 +1,13 @@
 import { themes } from "@storybook/theming";
+import { initialize, mswDecorator } from "msw-storybook-addon";
+
 import "../src/styles/global.css";
+
+initialize({
+  onUnhandledRequest: "bypass",
+});
+
+export const decorators = [mswDecorator];
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -11,12 +19,5 @@ export const parameters = {
   },
   docs: {
     theme: themes.dark,
-  },
-  viteFinal: (config, { configType }) => {
-    if (configType === "PRODUCTION") {
-      config.base = "/react-design-system/";
-    }
-
-    return config;
   },
 };
