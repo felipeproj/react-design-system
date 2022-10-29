@@ -1,10 +1,12 @@
 /**
  * Do not edit directly
- * Generated on Wed, 26 Oct 2022 23:23:50 GMT
+ * Generated on Sat, 29 Oct 2022 17:36:17 GMT
  */
 
 :root {
+  --color-transparent: rgba(0, 0, 0, 0);
   --color-black: #000000;
+  --color-white: #ffffff;
   --color-gray-100: #e1e1e6;
   --color-gray-200: #c4c4cc;
   --color-gray-400: #7c7c8a;

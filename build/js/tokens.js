@@ -1,10 +1,12 @@
 /**
  * Do not edit directly
- * Generated on Wed, 26 Oct 2022 23:23:50 GMT
+ * Generated on Sat, 29 Oct 2022 17:36:17 GMT
  */
 
 module.exports = {
+  "ColorTransparent": "#000000",
   "ColorBlack": "#000000",
+  "ColorWhite": "#ffffff",
   "ColorGray100": "#e1e1e6",
   "ColorGray200": "#c4c4cc",
   "ColorGray400": "#7c7c8a",

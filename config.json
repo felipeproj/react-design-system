@@ -11,6 +11,16 @@
         }
       ]
     },
+    "json": {
+      "transformGroup": "js",
+      "buildPath": "build/json/",
+      "files": [
+        {
+          "destination": "tokens.json",
+          "format": "json/nested"
+        }
+      ]
+    },
     "js": {
       "transformGroup": "js",
       "buildPath": "build/js/",
