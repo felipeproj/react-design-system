@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const tokensJSON = require("./build/json/tokens.json");
+
 module.exports = {
   content: ["./src/**/*.tsx"],
   theme: {
@@ -10,22 +13,7 @@ module.exports = {
       xl: 24,
       "2xl": 32,
     },
-    colors: {
-      transparent: "transparent",
-      black: "#000",
-      white: "#FFF",
-      gray: {
-        900: "#121214",
-        800: "#202024",
-        400: "#7c7c8a",
-        200: "#c4c4cc",
-        100: "#e1e1e6",
-      },
-      cyan: {
-        500: "#81D8F7",
-        300: "#9BE1FB",
-      },
-    },
+    colors: tokensJSON.color,
     extend: {
       fontFamily: {
         sans: "Inter, sans-serif",
