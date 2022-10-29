@@ -1,8 +1,15 @@
 {
-  "name": "react-design-system",
-  "private": true,
-  "version": "0.0.0",
+  "name": "@felipeproj/react-design-system",
+  "private": false,
+  "version": "1.0.0",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/felipeproj/react-design-system.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
